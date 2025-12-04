@@ -1,0 +1,1 @@
+menagerie_path = "D:\\Work\\mj_robo\\mujoco_menagerie-main\\mujoco_menagerie-main"
