@@ -9,7 +9,7 @@ conda create -n robowriter python=3.10
 conda activate robowriter
 ```
 
-### Install [MuJoCO](<https://github.com/google-deepmind/mujoco>)
+### Install [MuJoCo](<https://github.com/google-deepmind/mujoco>)
 
 ```bash
 pip install mujoco
