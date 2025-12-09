@@ -5,7 +5,7 @@
 ### Create environment
 
 ```bash
-conda create -n robowriter python=3.10
+conda create -n robowriter python=3.11
 conda activate robowriter
 ```
 
@@ -17,7 +17,9 @@ pip install mujoco
 
 ### Download models
 
-You can download all models in [Model Gallery](<https://mujoco.readthedocs.io/en/stable/models.html>) or just download the models you need.
+We have a modified UR5E robot arm model in this repo.
+
+You can download other models in [Model Gallery](<https://mujoco.readthedocs.io/en/stable/models.html>) or just download the models you need.
 
 If you want to use git:
 

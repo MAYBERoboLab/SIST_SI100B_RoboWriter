@@ -3,15 +3,15 @@ import time
 import mujoco.viewer
 import mujoco
 import numpy as np
+import os
 
-from consts import menagerie_path
-
-xml_path = menagerie_path + "\\universal_robots_ur5e\\scene.xml"
+script_dir = os.path.dirname(os.path.abspath(__file__))
+xml_path = os.path.join(script_dir, "..", "universal_robots_ur5e", "scene.xml")
 
 if __name__ == "__main__":
     model = mujoco.MjModel.from_xml_path(xml_path)
     data = mujoco.MjData(model)
-
+    
     key_frame_index = model.key("home").id
     mujoco.mj_resetDataKeyframe(model, data, key_frame_index)
     mujoco.mj_forward(model, data)
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     print("timestep:", model.opt.timestep)
 
     with mujoco.viewer.launch_passive(model, data) as viewer:
-         while viewer.is_running():
+        while viewer.is_running():
             step_start = time.time()
 
             # ctrl = np.zeros(model.nu)
