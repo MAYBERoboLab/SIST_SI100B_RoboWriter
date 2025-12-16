@@ -136,6 +136,10 @@
     <position class="position_small" name="wrist_3" joint="wrist_3"/>
   </actuator>
 
+  <sensor>
+		<framepos objtype="site" objname="attachment_site"/>
+	</sensor>
+
   <keyframe>
     <key name="home" qpos="-1.5708 -1.5708 1.5708 -1.5708 -1.5708 0" ctrl="-1.5708 -1.5708 1.5708 -1.5708 -1.5708 0"/>
   </keyframe>
