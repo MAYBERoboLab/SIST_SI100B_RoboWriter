@@ -13,7 +13,7 @@ import os
 import scipy as sp
 import time
 
-xml_path = '../../universal_robots_ur5e/scene.xml' #xml file (assumes this is in the same folder as this file)
+xml_path = 'scene.xml' #xml file (assumes this is in the same folder as this file)
 print_camera_config = 0 #set to 1 to print camera config
                         #this is useful for initializing view of the model)
 
@@ -78,7 +78,7 @@ def controller(model, data):
 
 # Get the full path
 dirname = os.path.dirname(__file__)
-abspath = os.path.join(dirname + "/" + xml_path)
+abspath = xml_path = os.path.join(dirname, "..", "..", "models", "universal_robots_ur5e", xml_path)
 xml_path = abspath
 
 # MuJoCo data structures
