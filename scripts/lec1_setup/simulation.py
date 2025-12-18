@@ -6,7 +6,7 @@ import numpy as np
 import os
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-xml_path = os.path.join(script_dir, "..", "..", "universal_robots_ur5e", "scene.xml")
+xml_path = os.path.join(script_dir, "..", "..", "models", "universal_robots_ur5e", "scene.xml")
 
 if __name__ == "__main__":
     model = mujoco.MjModel.from_xml_path(xml_path)
