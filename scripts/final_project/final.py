@@ -1,5 +1,5 @@
 ###
-# Planning practice with MuJoCo
+# Final project with MuJoCo
 # SI100B Robotics Programming
 # This code is modified based on the MuJoCo template code at https://github.com/pab47/pab47.github.io/tree/master.
 # Date: Dec., 2025
@@ -9,12 +9,15 @@ import mujoco as mj
 from mujoco.glfw import glfw
 import numpy as np
 import os
-import scipy as sp
 
 xml_path = '../../models/universal_robots_ur5e/scene.xml' #xml file (assumes this is in the same folder as this file)
-simend = 10 #simulation time (second)
+#################################
+## USER CODE: Set simulation parameters here
+#################################
+simend = 180 #simulation time (second)
 print_camera_config = 0 #set to 1 to print camera config
                         #this is useful for initializing view of the model)
+#################################
 
 # For callback functions
 button_left = False
@@ -150,11 +153,16 @@ glfw.set_cursor_pos_callback(window, mouse_move)
 glfw.set_mouse_button_callback(window, mouse_button)
 glfw.set_scroll_callback(window, scroll)
 
+
+########################################
+## USER CODE: Set camera view here
+########################################
 # Example on how to set camera configuration
-cam.azimuth =  179.8300000000001 
-cam.elevation =  87.16333333333334
+cam.azimuth =  85.66333333333347 
+cam.elevation =  -35.33333333333329
 cam.distance =  2.22
-cam.lookat = np.array([ 0.29723477517870245 , 0.28277006411151073 , 0.6082647377843177 ])
+cam.lookat = np.array([ -0.09343103051557476 , 0.31359595076587915 , 0.22170312166086661 ])
+########################################
 
 # Initialize the controller
 init_controller(model,data)
@@ -168,25 +176,16 @@ data.qpos[:] = init_qpos
 cur_q_pos = init_qpos.copy()
 
 traj_points = []
-MAX_TRAJ = 1000
+MAX_TRAJ = 5e5  # Maximum number of trajectory points to store
 LINE_RGBA = np.array([1.0, 0.0, 0.0, 1.0])
 
-q0 = np.array([0.5, 0.1, 0.1])
-q1 = np.array([0.3, 0.2, 0.1])
-q2 = np.array([0.6, 0.4, 0.1])
-t_total = simend
-
 ######################################
-### BAISIC INTERPOLATION FUNCTIONS ###
-def LinearInterpolate(q0, q1, t, t_total):
-    pass
+## USER CODE STARTS HERE
 ######################################
 
-############################################
-### BONUS: BEZIER INTERPOLATION FUNCTION ###
-def QuadBezierInterpolate(q0, q1, q2, t, t_total):
-    pass
-############################################
+######################################
+## USER CODE ENDS HERE
+######################################
 
 while not glfw.window_should_close(window):
     time_prev = data.time
@@ -202,11 +201,14 @@ while not glfw.window_should_close(window):
         # Get current joint configuration
         cur_q_pos = data.qpos.copy()
         
-        # Compute reference position
-        if (data.time < t_total/2):
-            X_ref = LinearInterpolate(q0, q1, data.time, t_total/2)
-        elif (data.time < t_total):
-            X_ref = LinearInterpolate(q1, q2, data.time - t_total/2, t_total/2)
+        ######################################
+        ## USER CODE STARTS HERE
+        ######################################
+        X_ref = np.array([0.0, 0.1, 0.1])  # Desired end-effector position, this line is just an example
+        
+        ######################################
+        ## USER CODE ENDS HERE
+        ######################################
 
         # Compute control input using IK
         cur_ctrl = IK_controller(model, data, X_ref, cur_q_pos)
