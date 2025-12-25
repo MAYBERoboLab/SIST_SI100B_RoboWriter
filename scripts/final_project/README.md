@@ -30,22 +30,30 @@ This is a README file for **ShanghaiTech University SI100B Project: RoboWriter**
 ### Requirements
 #### I. PPT Guidelines.
 1. Language: English
-2. Front Page Content:Title, Names of Group Members, and Email Addresses.
-3. Core Content: Must include clear project execution results [Video].
+2. Front Page Content: Title, Names of Group Members, and Student IDs.
+3. Core Content: Must include clear project execution results --Plots and Videos.
 #### II.Time Allocation (5 Minutes Total)
-1. 4Minutes:PPT presentation 
-2. 1Minute:Q&A session.
+1. 4 Minutes: PPT presentation 
+2. 1 Minute: Q&A session.
 
 ### Grading Criteria
-1. Time Management[15%]:Timing must be within a ±1 minute margin. 
-2. Visual Clarity[10%]:Slides should have a clear layout that is professional and easy to read.
-3. Logical Structure[60%]:The presentation should include Methodology, Results, Limitations, and Future Work/Improvements.
-4. Q&A Session[15%]:Ability to provide clear answers to questions.
+1. Time Management [15%]: Timing must be within a ±1 minute margin. 
+2. Visual Clarity [10%]: Slides should have a clear layout that is professional and easy to read.
+3. Logical Structure [60%]: The presentation should include Methodology, Results, Limitations, and Future Work/Possible Improvements.
+4. Q&A Session [15%]: Ability to provide clear answers to questions.
 
 
 ## III. Project Reports (6 points)
 ### Requirements
-**TBD**
-### Grading Criteria
-**TBD**
-
+1.  Project Overview: Briefly introduce the research background, research purpose, application scenarios and overall work content of the project.
+2.  System Design: Describe the overall architecture of the system, module divisions, key technical solutions, and the relationship between each module.
+3.  Implementation: Describe in detail the specific implementation process of the system or project, including the technologies, algorithms, tools and implementation steps used.
+4.  Testing and Results: Introduce the testing method and test environment, and display the system operation results and performance analysis.
+5.  Discussion and Improvement: Analyze the significance of the experimental results, existing problems in the system, and propose possible improvement directions.
+6.  Conclusion: Summarize the work and results of the overall project and briefly look forward to future research or applications.
+ 
+### Grading creteria
+1.  Completeness(25%): Evaluate whether the report contains all required chapters, whether the content is complete, whether the structure is clear, and whether key parts are not missing.
+2.  Technical Explanation(30%): Evaluate whether the explanations of system design, technical solutions and implementation processes are accurate and clear, and reflect understanding of relevant technologies.
+3.  Results Analysis(25%): Evaluate whether the analysis of experimental results or system output is reasonable and whether it can be effectively explained in combination with data or phenomena.
+4.  Reflection and Improvement(20%): Evaluate the depth of reflection on project shortcomings and whether the proposed improvements are feasible and meaningful.
