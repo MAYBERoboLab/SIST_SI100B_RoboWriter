@@ -5,14 +5,14 @@ This is a README file for **ShanghaiTech University SI100B Project: RoboWriter**
 ## I. Project Implementation (45 points)
 ### Requirements
 #### Basic
-1. Robot Arm Model (2 points): The universal_robots_ur5e model in the newest version of code repo : https://github.com/MAYBERoboLab/SIST_SI100B_RoboWriter 
+1. Robot Arm Model (2 points): The universal_robots_ur5e model in the newest version of the code repo : https://github.com/MAYBERoboLab/SIST_SI100B_RoboWriter 
 2. Start pose and Terminal pose (5 points): The robot arm can start at any pose but needs to stop at the joint configuration: $[0.0,-2.32,-1.38,-2.45,1.57,0.0]$ rad after finishing the writing.
 3. Writing area (5 points): The writing area is a square at the plane z=0.1 m. This square is defined by its four vertices: $(0.5, 0.1, 0.1)$, $(0.5, 0.6, 0.1)$, $(-0.5, 0.6, 0.1)$, and $(-0.5, 0.1, 0.1)$ m.
 4. Lifting the end-effector (5 points): The end-effector of the robot arm should lift between each stroke and each character.
-5. Writing contents (10 points): The robot should write a student's name (can choose one in your group) in Chinese and PinYin, and the student's school ID in the writing area. Visualize the written scripts/strokes of the words in real time.
+5. Writing contents (10 points): The robot should write a student's name (can choose one in your group) in Chinese and Pinyin, and the student's school ID in the writing area. Visualize the written scripts/strokes of the words in real time.
 6. Interpolation Method (7 points): Use multiple different interpolation methods to mimic the real strokes.
 7. Writing speed (3 points): The robot's writing speed should be set at a reasonable value so that the whole writing time (from the robot's start pose to the terminal pose) is less than 3 minutes.
-8. Plot joint state curves (3 points): Plot all the joint states of the robot arm when wirtting one word, let it be your family name in Chinese. 
+8. Plot joint state curves (3 points): Plot all the joint states of the robot arm when writing one word, let it be your family name in Chinese. 
 9. Demo video (5 points): Record a video to demonstrate the writing process, you can adjust the camera for a better view. The name of the video should be "Group Member Names + Final Project Demo" in MP4 format.
 
 #### Bonus
@@ -31,7 +31,7 @@ This is a README file for **ShanghaiTech University SI100B Project: RoboWriter**
 #### I. PPT Guidelines.
 1. Language: English
 2. Front Page Content: Title, Names of Group Members, and Student IDs.
-3. Core Content: Must include clear project execution results --Plots and Videos.
+3. Core Content: Must include clear project execution results-Plots and Videos.
 #### II.Time Allocation (5 Minutes Total)
 1. 4 Minutes: PPT presentation 
 2. 1 Minute: Q&A session.
@@ -45,15 +45,15 @@ This is a README file for **ShanghaiTech University SI100B Project: RoboWriter**
 
 ## III. Project Reports (6 points)
 ### Requirements
-1.  Project Overview: Briefly introduce the research background, research purpose, application scenarios and overall work content of the project.
+1.  Project Overview: Briefly introduce the research background, research purpose, application scenarios, and overall work content of the project.
 2.  System Design: Describe the overall architecture of the system, module divisions, key technical solutions, and the relationship between each module.
-3.  Implementation: Describe in detail the specific implementation process of the system or project, including the technologies, algorithms, tools and implementation steps used.
+3.  Implementation: Describe in detail the specific implementation process of the system or project, including the technologies, algorithms, tools, and implementation steps used.
 4.  Testing and Results: Introduce the testing method and test environment, and display the system operation results and performance analysis.
 5.  Discussion and Improvement: Analyze the significance of the experimental results, existing problems in the system, and propose possible improvement directions.
 6.  Conclusion: Summarize the work and results of the overall project and briefly look forward to future research or applications.
  
-### Grading creteria
+### Grading criteria
 1.  Completeness(25%): Evaluate whether the report contains all required chapters, whether the content is complete, whether the structure is clear, and whether key parts are not missing.
-2.  Technical Explanation(30%): Evaluate whether the explanations of system design, technical solutions and implementation processes are accurate and clear, and reflect understanding of relevant technologies.
+2.  Technical Explanation(30%): Evaluate whether the explanations of system design, technical solutions, and implementation processes are accurate and clear, and reflect understanding of relevant technologies.
 3.  Results Analysis(25%): Evaluate whether the analysis of experimental results or system output is reasonable and whether it can be effectively explained in combination with data or phenomena.
 4.  Reflection and Improvement(20%): Evaluate the depth of reflection on project shortcomings and whether the proposed improvements are feasible and meaningful.
