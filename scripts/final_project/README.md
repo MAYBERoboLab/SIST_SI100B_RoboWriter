@@ -18,7 +18,7 @@ This is a README file for **ShanghaiTech University SI100B Project: RoboWriter**
 #### Bonus
 1. Git (1 point): Use Git to manage your code, and you need to have at least 3 commits for each group member.
 2. Writing arbitrary words (2 points): Given an arbitrary string, you need to write the words in the string with the robot arm. The string will only contain English letters, spaces, numbers, commas, and periods.
-3. Writing on a sphere (3 points): Write words on an area of the inner surface of a sphere defined by: $(x-0)^2+(y-0.35)^2+(z-1.3)^2=4$ and $z\leq 0.1$.
+3. Writing on a sphere (3 points): Write words on an area of the inner surface of a sphere defined by: $(x-0)^2+(y-0.35)^2+(z-1.3)^2=1.69$ and $z\leq 0.1$.
 
 ### Grading Criteria
 1. For basic requirements, if you will only earn the points from requirement 1 to $k (k=1,2,3,4,5,6,7,8)$ if you fail to finish requirement $k+1$. If you fail to finish multiple requirements, $k$ will be the smallest requirement index that was not completed.
